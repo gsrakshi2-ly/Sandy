@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050816">
+
+    <title>The Final Letter | SANDYVERSE</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="missions.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body class="finale-page">
+
+    <div class="finale-blackout" id="finale-blackout" aria-hidden="true"></div>
+
+    <div class="star-field finale-stars" aria-hidden="true"></div>
+
+    <div class="finale-galaxy" aria-hidden="true">
+        <span class="galaxy-star galaxy-star-one">✦</span>
+        <span class="galaxy-star galaxy-star-two">✧</span>
+        <span class="galaxy-star galaxy-star-three">✦</span>
+        <span class="galaxy-star galaxy-star-four">˚</span>
+        <span class="galaxy-star galaxy-star-five">✧</span>
+        <span class="galaxy-star galaxy-star-six">✦</span>
+    </div>
+
+    <header class="agency-header finale-header">
+        <a class="agency-brand" href="index.html">
+            <span class="agency-symbol" aria-hidden="true">☾ ✦</span>
+            <span>SANDYVERSE</span>
+        </a>
+
+        <span class="classified-label">FINAL TRANSMISSION // 12</span>
+    </header>
+
+    <main class="page-container finale-container">
+
+        <!-- OPENING SCREEN -->
+
+        <section class="finale-intro" id="finale-intro">
+
+            <p class="eyebrow">ALL MISSIONS HAVE LED TO THIS MOMENT</p>
+
+            <div class="finale-emblem" aria-hidden="true">
+                <span class="finale-moon">☾</span>
+                <span class="finale-emblem-star">✦</span>
+                <span class="finale-emblem-orbit"></span>
+            </div>
+
+            <h1>ONE LAST <span class="accent-text">LETTER</span></h1>
+
+            <p class="hero-description">
+                Agent Sandy, every mission has an ending.
+                But some memories deserve to be kept long after
+                the final screen fades.
+            </p>
+
+            <p class="finale-intro-note">
+                This message is yours to keep.
+            </p>
+
+            <button
+                class="primary-button"
+                id="begin-finale"
+                type="button"
+            >
+                OPEN THE FINAL CHAPTER
+            </button>
+
+        </section>
+
+        <!-- SEALED LETTER -->
+
+        <section
+            class="panel finale-letter-section"
+            id="finale-letter-section"
+            hidden
+        >
+
+            <p class="eyebrow">PERSONAL TRANSMISSION // EXCLUSIVELY FOR SANDY</p>
+
+            <h2>Your Birthday Letter</h2>
+
+            <p class="section-description">
+                There is no mission to solve here. Just a letter,
+                three paragraphs, and a little reminder of how special
+                you are.
+            </p>
+
+            <div class="final-letter-stage" id="final-letter-stage">
+
+                <div class="final-letter-glow" aria-hidden="true"></div>
+
+                <button
+                    class="final-letter-envelope"
+                    id="open-final-letter"
+                    type="button"
+                    aria-label="Open your birthday letter"
+                    aria-expanded="false"
+                    aria-controls="final-letter-content"
+                >
+                    <span class="final-letter-back"></span>
+
+                    <span class="final-letter-paper">
+                        <span class="final-letter-paper-symbol">☾ ✦</span>
+                        <span class="final-letter-paper-title">
+                            A LETTER FOR SANDY
+                        </span>
+                    </span>
+
+                    <span class="final-letter-pocket"></span>
+                    <span class="final-letter-flap"></span>
+
+                    <span class="final-letter-seal">✦</span>
+                </button>
+
+            </div>
+
+            <p class="final-letter-hint" id="final-letter-hint">
+                Your letter is sealed. Open it when you are ready.
+            </p>
+
+            <p class="access-note" id="final-letter-status" aria-live="polite">
+                Awaiting recipient.
+            </p>
+
+            <!-- THE EXACT THREE-PARAGRAPH MESSAGE -->
+
+            <div
+                class="final-letter-content"
+                id="final-letter-content"
+                hidden
+            >
+
+                <p class="eyebrow">A LITTLE SOMETHING FROM THE HEART</p>
+
+                <div class="final-letter-paragraphs">
+
+                    <p
+                        class="final-letter-paragraph"
+                        id="final-paragraph-one"
+                        hidden
+                    >Some people come into our lives and make everything feel a little brighter without even trying, and you are one of those people. 💗 You have such a beautiful way of making ordinary moments feel special, turning simple conversations into happy memories, and bringing smiles even on the days when things don’t go as planned. I hope you know how precious you are and how much your presence means to the people around you. Sometimes, the smallest things you do can make the biggest difference in someone’s day, and that is a truly beautiful thing about you. 🫶🏻✨</p>
+
+                    <p
+                        class="final-letter-paragraph"
+                        id="final-paragraph-two"
+                        hidden
+                    >I hope life gives you a thousand reasons to smile, countless moments to laugh until your stomach hurts, and people who make you feel loved just as much as you make others feel loved. Never stop being the person you are, with your little habits, your unique personality, your dreams, and all the things that make you *you*. You don’t have to be perfect to be special, and you don’t have to do anything extraordinary to deserve happiness. You deserve all the beautiful things this world has to offer, simply because you are you. 🌷💌</p>
+
+                    <p
+                        class="final-letter-paragraph"
+                        id="final-paragraph-three"
+                        hidden
+                    >And no matter how much life changes, I hope you always have something to look forward to, someone to lean on, and memories that make you smile even years later. May your future be filled with beautiful surprises, genuine friendships, endless laughter, and dreams that slowly turn into reality. Always remember that you are more loved, appreciated, and important than you might sometimes realise. Keep that beautiful heart of yours safe, keep smiling your lovely smile, and never forget that the world is a little brighter with you in it. 💖🦋</p>
+
+                </div>
+
+                <div class="final-letter-controls">
+                    <button
+                        class="primary-button"
+                        id="continue-letter"
+                        type="button"
+                    >
+                        CONTINUE READING
+                    </button>
+                </div>
+
+                <p class="access-note" id="paragraph-status" aria-live="polite">
+                    Your letter is waiting.
+                </p>
+
+            </div>
+
+            <!-- FINAL SIGN-OFF -->
+
+            <section
+                class="final-signoff"
+                id="final-signoff"
+                hidden
+            >
+
+                <div class="final-signoff-emblem" aria-hidden="true">
+                    ✦ ☾ ✦
+                </div>
+
+                <p class="eyebrow">END OF TRANSMISSION</p>
+
+                <h2>For You, Always</h2>
+
+                <p>
+                    May this birthday be the beginning of a year
+                    filled with memories worth keeping.
+                </p>
+
+                <p class="final-signature">
+                    With love, laughter, and a little stardust,<br>
+                    <strong>YOUR SANDYVERSE CREW</strong>
+                </p>
+
+                <div
+                    class="finale-sparkle-field"
+                    id="finale-sparkle-field"
+                    aria-hidden="true"
+                ></div>
+
+            </section>
+
+        </section>
+
+        <!-- MISSION COMPLETE -->
+
+        <section
+            class="panel mission-complete-section"
+            id="mission-complete-section"
+            hidden
+        >
+
+            <div class="complete-emblem" aria-hidden="true">
+                <span>☾</span>
+                <span>✦</span>
+                <span>∞</span>
+            </div>
+
+            <p class="eyebrow">ALL TWELVE MISSIONS COMPLETED</p>
+
+            <h1>SANDYVERSE</h1>
+
+            <h2>MISSION COMPLETE</h2>
+
+            <p class="mission-complete-message">
+                Every secret uncovered. Every mission completed.
+                One birthday universe created just for Sandy.
+            </p>
+
+            <div class="complete-status-grid">
+                <div>
+                    <span>MISSIONS</span>
+                    <strong>12 / 12</strong>
+                </div>
+
+                <div>
+                    <span>AGENT</span>
+                    <strong>SANDY</strong>
+                </div>
+
+                <div>
+                    <span>FINAL STATUS</span>
+                    <strong>ICONIC</strong>
+                </div>
+            </div>
+
+            <p class="finale-last-line">
+                The files may close, but the memories stay. 💖
+            </p>
+
+            <div class="mission-complete-actions">
+
+                <button
+                    class="secondary-button"
+                    id="replay-message"
+                    type="button"
+                >
+                    READ THE LETTER AGAIN
+                </button>
+
+                <a class="primary-button" href="index.html">
+                    RETURN TO HEADQUARTERS
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="agency-footer finale-footer">
+        <span>SANDYVERSE // FINAL TRANSMISSION</span>
+        <span>MISSION 12 / 12</span>
+        <span>END OF FILE</span>
+    </footer>
+
+</body>
+</html>

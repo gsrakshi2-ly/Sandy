@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#070b18">
+
+    <title>The Classified Gift | SANDYVERSE</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="missions.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body class="gift-page">
+
+    <div class="star-field" aria-hidden="true"></div>
+
+    <header class="agency-header">
+        <a class="agency-brand" href="index.html">
+            <span class="agency-symbol" aria-hidden="true">☾ ✦</span>
+            <span>SANDYVERSE</span>
+        </a>
+
+        <span class="classified-label">GIFT DIVISION // 08</span>
+    </header>
+
+    <main class="page-container">
+
+        <!-- INTRODUCTION -->
+
+        <section class="hero-section gift-hero">
+            <p class="eyebrow">PRIORITY TRANSMISSION RECEIVED</p>
+
+            <h1>ONE LAST <span class="accent-text">SECRET</span></h1>
+
+            <p class="hero-description">
+                Agent Sandy, your mission records indicate exceptional
+                levels of chaos, elite entertainment knowledge, and
+                suspicious loyalty to ramen.
+            </p>
+
+            <p class="hero-description">
+                Headquarters has authorised a special birthday delivery.
+                Its contents are classified until you open the package.
+            </p>
+
+            <div class="status-strip">
+                <span>RECIPIENT: SANDY</span>
+                <span>PACKAGE: 01</span>
+                <span>ACCESS: RESTRICTED</span>
+            </div>
+        </section>
+
+        <!-- GIFT PACKAGE -->
+
+        <section class="panel gift-package-section">
+
+            <p class="eyebrow">CONFIDENTIAL DELIVERY</p>
+
+            <h2>Your Package Has Arrived</h2>
+
+            <p class="section-description">
+                One package. Two keepsakes. Unlimited birthday chaos.
+            </p>
+
+            <div class="gift-stage" id="gift-stage">
+
+                <div
+                    class="gift-glow"
+                    aria-hidden="true"
+                ></div>
+
+                <div
+                    class="gift-box"
+                    id="gift-box"
+                    aria-hidden="true"
+                >
+                    <div class="gift-box-lid"></div>
+                    <div class="gift-box-body"></div>
+                    <div class="gift-ribbon gift-ribbon-vertical"></div>
+                    <div class="gift-ribbon gift-ribbon-horizontal"></div>
+                    <div class="gift-bow"></div>
+                </div>
+
+                <div class="gift-particles" id="gift-particles" aria-hidden="true"></div>
+
+                <p class="gift-seal">SEALED BY SANDYVERSE HQ</p>
+
+            </div>
+
+            <button
+                class="primary-button gift-open-button"
+                id="open-gift"
+                type="button"
+            >
+                OPEN CLASSIFIED PACKAGE
+            </button>
+
+            <p id="gift-status" class="access-note" aria-live="polite">
+                Package secured. Awaiting recipient authorisation.
+            </p>
+
+        </section>
+
+        <!-- COLLECTIBLE CARD -->
+
+        <section
+            class="panel keepsake-section"
+            id="collectible-section"
+            hidden
+        >
+            <p class="eyebrow">KEEPSAKE 01 // LIMITED EDITION</p>
+
+            <h2>The SANDYVERSE Collectible</h2>
+
+            <p class="section-description">
+                An exclusive birthday collectible issued to one
+                very particular agent.
+            </p>
+
+            <div class="collectible-card" id="collectible-card">
+
+                <div class="collectible-card-top">
+                    <span>SANDYVERSE</span>
+                    <span>EDITION 001</span>
+                </div>
+
+                <div class="collectible-emblem" aria-hidden="true">
+                    <span class="collectible-moon">☾</span>
+                    <span class="collectible-star">✦</span>
+                    <span class="collectible-diamond">◇</span>
+                </div>
+
+                <p class="eyebrow">CLASSIFIED BIRTHDAY COLLECTIBLE</p>
+
+                <h3>SANDRA MATTEW</h3>
+
+                <p class="collectible-codename">CODENAME: SANDY</p>
+
+                <div class="collectible-divider"></div>
+
+                <div class="collectible-stats">
+                    <div>
+                        <span>CHAOS LEVEL</span>
+                        <strong>MAXIMUM</strong>
+                    </div>
+
+                    <div>
+                        <span>RARITY</span>
+                        <strong>ONE OF ONE</strong>
+                    </div>
+
+                    <div>
+                        <span>AGENT STATUS</span>
+                        <strong>ICONIC</strong>
+                    </div>
+                </div>
+
+                <p class="collectible-footer">
+                    ISSUED WITH ABSOLUTELY UNNECESSARY DRAMA
+                </p>
+
+            </div>
+
+            <button
+                class="secondary-button"
+                id="save-collectible"
+                type="button"
+            >
+                COPY COLLECTIBLE DETAILS
+            </button>
+
+            <p id="collectible-status" class="access-note" aria-live="polite"></p>
+
+        </section>
+
+        <!-- BIRTHDAY AGENT CERTIFICATE -->
+
+        <section
+            class="panel certificate-section"
+            id="certificate-section"
+            hidden
+        >
+            <p class="eyebrow">KEEPSAKE 02 // OFFICIAL RECORD</p>
+
+            <h2>Birthday Agent Certificate</h2>
+
+            <p class="section-description">
+                Headquarters has reviewed the evidence.
+                The result was never in doubt.
+            </p>
+
+            <div class="agent-certificate" id="agent-certificate">
+
+                <div class="certificate-border">
+
+                    <div class="certificate-header">
+                        <span class="certificate-moon" aria-hidden="true">☾ ✦</span>
+                        <p>SANDYVERSE SECRET AGENCY</p>
+                        <span class="certificate-classification">
+                            OFFICIAL BIRTHDAY RECORD
+                        </span>
+                    </div>
+
+                    <div class="certificate-divider"></div>
+
+                    <p class="certificate-eyebrow">
+                        THIS CERTIFICATE IS PRESENTED TO
+                    </p>
+
+                    <h3>SANDRA MATTEW</h3>
+
+                    <p class="certificate-codename">
+                        AGENT CODENAME: SANDY
+                    </p>
+
+                    <p class="certificate-message">
+                        In recognition of outstanding achievements in
+                        chaos management, K-pop expertise, K-drama
+                        investigation, and the protection of precious
+                        ramen supplies.
+                    </p>
+
+                    <div class="certificate-award">
+                        <span aria-hidden="true">✦</span>
+                        <div>
+                            <strong>ELITE BIRTHDAY AGENT</strong>
+                            <p>CLEARANCE LEVEL: INFINITY</p>
+                        </div>
+                        <span aria-hidden="true">✦</span>
+                    </div>
+
+                    <div class="certificate-bottom">
+                        <div>
+                            <span>ISSUED BY</span>
+                            <strong>SANDYVERSE HQ</strong>
+                        </div>
+
+                        <div>
+                            <span>RECORD STATUS</span>
+                            <strong>PERMANENTLY ICONIC</strong>
+                        </div>
+                    </div>
+
+                    <span class="certificate-stamp">
+                        APPROVED
+                    </span>
+
+                </div>
+
+            </div>
+
+            <button
+                class="secondary-button"
+                id="save-certificate"
+                type="button"
+            >
+                COPY CERTIFICATE DETAILS
+            </button>
+
+            <p id="certificate-status" class="access-note" aria-live="polite"></p>
+
+        </section>
+
+        <!-- FINAL GIFT MESSAGE -->
+
+        <section
+            class="panel gift-message-section"
+            id="gift-message-section"
+            hidden
+        >
+            <div class="gift-message-emblem" aria-hidden="true">✦ ☾ ✦</div>
+
+            <p class="eyebrow">MESSAGE FROM HEADQUARTERS</p>
+
+            <h2>A Small Reminder, Agent Sandy</h2>
+
+            <p>
+                Behind every classified file, ridiculous mission,
+                and unnecessary plot twist, there is one simple reason
+                this entire universe exists: to celebrate you.
+            </p>
+
+            <p>
+                We hope this little corner of the internet gives you
+                something to smile about, a few memories to keep,
+                and a birthday that feels wonderfully yours.
+            </p>
+
+            <p class="gift-signature">
+                With maximum chaos and birthday-level affection,<br>
+                <strong>THE SANDYVERSE TEAM</strong>
+            </p>
+
+        </section>
+
+        <!-- NAVIGATION -->
+
+        <nav class="mission-navigation" aria-label="Mission navigation">
+
+            <a class="secondary-button" href="arcade.html">
+                ← PREVIOUS MISSION
+            </a>
+
+            <button
+                class="primary-button"
+                id="continue-gift"
+                type="button"
+            >
+                CONTINUE TO VIP CLEARANCE →
+            </button>
+
+        </nav>
+
+        <p class="access-note" id="gift-clearance" aria-live="polite">
+            Open the package to reveal both keepsakes and request the next mission.
+        </p>
+
+    </main>
+
+    <footer class="agency-footer">
+        <span>SANDYVERSE // CLASSIFIED GIFT</span>
+        <span>MISSION 08 / 12</span>
+        <span>PREPARED EXCLUSIVELY FOR SANDY</span>
+    </footer>
+
+</body>
+</html>

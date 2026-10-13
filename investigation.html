@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080D18">
+
+  <title>Investigation Files | SANDYVERSE</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="missions.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body class="investigation-page">
+
+  <main class="page-container">
+
+    <header class="agency-header">
+      <a class="agency-brand" href="index.html">
+        <span class="agency-symbol" aria-hidden="true">☾ ✦</span>
+        <span>SANDYVERSE</span>
+      </a>
+
+      <span class="classified-label">MISSION 04</span>
+    </header>
+
+    <section class="page-hero">
+      <p class="eyebrow">CONFIDENTIAL PERSONNEL INVESTIGATION</p>
+
+      <h1>
+        SUBJECT UNDER<br>
+        <span>INVESTIGATION.</span>
+      </h1>
+
+      <p class="page-description">
+        The agency has questions. The evidence is questionable.
+        The suspect is somehow even more suspicious.
+      </p>
+    </section>
+
+    <section class="investigation-file panel">
+
+      <div class="file-topline">
+        <span class="file-tag">PERSONNEL FILE 004</span>
+        <span class="danger-label">THREAT LEVEL: CHAOTIC</span>
+      </div>
+
+      <div class="subject-card">
+        <div class="subject-symbol" aria-hidden="true">☾</div>
+
+        <div class="subject-details">
+          <p class="detail-label">SUBJECT NAME</p>
+          <h2>SANDRA MATTEW</h2>
+
+          <p>
+            <span class="detail-label">CODENAME:</span>
+            SANDY
+          </p>
+
+          <p>
+            <span class="detail-label">CURRENT STATUS:</span>
+            EXTREMELY SUSPICIOUS
+          </p>
+        </div>
+
+        <span class="classified-stamp">CLASSIFIED</span>
+      </div>
+
+      <div class="evidence-section">
+        <h2>THE EVIDENCE BOARD</h2>
+
+        <p class="section-description">
+          Select a case file to reveal the agency's findings.
+        </p>
+
+        <div class="evidence-grid">
+
+          <button class="evidence-card" type="button"
+                  data-case="kpop">
+            <span class="evidence-number">CASE 001</span>
+            <span class="evidence-icon" aria-hidden="true">♫</span>
+            <span class="evidence-title">K-POP OBSESSION</span>
+            <span class="evidence-hint">Open case file →</span>
+          </button>
+
+          <button class="evidence-card" type="button"
+                  data-case="ramen">
+            <span class="evidence-number">CASE 002</span>
+            <span class="evidence-icon" aria-hidden="true">♨</span>
+            <span class="evidence-title">RAMEN LOYALTY</span>
+            <span class="evidence-hint">Open case file →</span>
+          </button>
+
+          <button class="evidence-card" type="button"
+                  data-case="academic">
+            <span class="evidence-number">CASE 003</span>
+            <span class="evidence-icon" aria-hidden="true">▤</span>
+            <span class="evidence-title">ACADEMIC MYSTERIES</span>
+            <span class="evidence-hint">Open case file →</span>
+          </button>
+
+          <button class="evidence-card" type="button"
+                  data-case="drama">
+            <span class="evidence-number">CASE 004</span>
+            <span class="evidence-icon" aria-hidden="true">▣</span>
+            <span class="evidence-title">K-DRAMA EFFECTS</span>
+            <span class="evidence-hint">Open case file →</span>
+          </button>
+
+          <button class="evidence-card" type="button"
+                  data-case="chaos">
+            <span class="evidence-number">CASE 005</span>
+            <span class="evidence-icon" aria-hidden="true">✦</span>
+            <span class="evidence-title">UNEXPLAINABLE CHAOS</span>
+            <span class="evidence-hint">Open case file →</span>
+          </button>
+
+        </div>
+      </div>
+
+      <section class="evidence-report" id="evidence-report"
+               aria-live="polite" hidden>
+        <span class="file-tag" id="report-number">
+          EVIDENCE REPORT
+        </span>
+
+        <h2 id="report-title">CASE FILE</h2>
+
+        <p id="report-description"></p>
+
+        <p class="report-verdict" id="report-verdict"></p>
+      </section>
+
+      <div class="investigation-actions">
+        <button class="secondary-button" id="scan-subject"
+                type="button">
+          SCAN SUBJECT
+        </button>
+
+        <button class="secondary-button" id="analyse-evidence"
+                type="button">
+          ANALYSE EVIDENCE
+        </button>
+
+        <button class="primary-button" id="final-verdict"
+                type="button">
+          GENERATE FINAL VERDICT
+        </button>
+      </div>
+
+      <p class="access-note" id="investigation-status"
+         aria-live="polite">
+        Awaiting evidence. Select a case to begin.
+      </p>
+
+      <section class="final-report" id="final-report"
+               aria-live="polite" hidden>
+        <span class="classified-stamp">CASE CLOSED</span>
+
+        <h2>FINAL AGENCY VERDICT</h2>
+
+        <p id="final-verdict-text"></p>
+
+        <button class="primary-button" id="continue-mission"
+                type="button">
+          CONTINUE MISSION →
+        </button>
+      </section>
+
+    </section>
+
+    <nav class="mission-navigation" aria-label="Mission navigation">
+      <a class="text-link" href="episodes.html">
+        ← PREVIOUS MISSION
+      </a>
+
+      <a class="text-link" href="index.html">
+        RETURN TO HQ
+      </a>
+    </nav>
+
+    <footer class="agency-footer">
+      <span>AGENCY DIVISION: PERSONNEL CHAOS</span>
+      <span>MISSION 04 / 12</span>
+    </footer>
+
+  </main>
+
+</body>
+</html>

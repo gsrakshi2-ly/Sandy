@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#070b18">
+
+    <title>Chaos Arcade | SANDYVERSE</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="missions.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="games.js" defer></script>
+</head>
+
+<body class="arcade-page">
+
+    <div class="star-field" aria-hidden="true"></div>
+
+    <header class="agency-header">
+        <a class="agency-brand" href="index.html">
+            <span class="agency-symbol" aria-hidden="true">☾ ✦</span>
+            <span>SANDYVERSE</span>
+        </a>
+
+        <span class="classified-label">ARCADE DIVISION // 07</span>
+    </header>
+
+    <main class="page-container">
+
+        <section class="hero-section">
+            <p class="eyebrow">CLASSIFIED ENTERTAINMENT DIVISION</p>
+
+            <h1>CHAOS <span class="accent-text">ARCADE</span></h1>
+
+            <p class="hero-description">
+                Welcome, Agent Sandy. Your mission is simple:
+                survive the chaos, collect the points, and prove
+                that your reflexes are stronger than your distractions.
+            </p>
+
+            <div class="status-strip">
+                <span>AGENT: SANDY</span>
+                <span>GAMES: 04</span>
+                <span>AUDIO: DISABLED</span>
+            </div>
+        </section>
+
+        <!-- GAME SELECTION -->
+
+        <section class="panel arcade-selection" aria-labelledby="game-selection-title">
+
+            <div class="section-heading">
+                <p class="eyebrow">SELECT YOUR MISSION</p>
+                <h2 id="game-selection-title">Choose Your Chaos</h2>
+                <p>Play any game in any order. Your scores are tracked separately.</p>
+            </div>
+
+            <div class="arcade-grid">
+
+                <article class="arcade-card">
+                    <div class="game-icon" aria-hidden="true">🍜</div>
+                    <p class="eyebrow">GAME 01</p>
+                    <h3>Catch the Ramen</h3>
+                    <p>
+                        Catch the falling ramen. Collect the good stuff
+                        and avoid anything that ruins the perfect bowl.
+                    </p>
+                    <p class="game-best-score">
+                        BEST SCORE: <span id="ramen-best">0</span>
+                    </p>
+                    <button
+                        class="primary-button game-launch"
+                        type="button"
+                        data-game="ramen"
+                    >
+                        PLAY GAME
+                    </button>
+                </article>
+
+                <article class="arcade-card">
+                    <div class="game-icon" aria-hidden="true">📚</div>
+                    <p class="eyebrow">GAME 02</p>
+                    <h3>Dodge the Homework</h3>
+                    <p>
+                        Dodge incoming assignments for as long as possible.
+                        The homework has officially become self-aware.
+                    </p>
+                    <p class="game-best-score">
+                        BEST SCORE: <span id="homework-best">0</span>
+                    </p>
+                    <button
+                        class="primary-button game-launch"
+                        type="button"
+                        data-game="homework"
+                    >
+                        PLAY GAME
+                    </button>
+                </article>
+
+                <article class="arcade-card">
+                    <div class="game-icon" aria-hidden="true">💎</div>
+                    <p class="eyebrow">GAME 03</p>
+                    <h3>Tap the Bias</h3>
+                    <p>
+                        Tap the target as quickly as you can before
+                        time runs out. Your reflexes are under investigation.
+                    </p>
+                    <p class="game-best-score">
+                        BEST SCORE: <span id="bias-best">0</span>
+                    </p>
+                    <button
+                        class="primary-button game-launch"
+                        type="button"
+                        data-game="bias"
+                    >
+                        PLAY GAME
+                    </button>
+                </article>
+
+                <article class="arcade-card">
+                    <div class="game-icon" aria-hidden="true">🎬</div>
+                    <p class="eyebrow">GAME 04</p>
+                    <h3>Guess the K-Drama Trope</h3>
+                    <p>
+                        Read the dramatic situation and identify the
+                        classic K-drama trope. No spoilers required.
+                    </p>
+                    <p class="game-best-score">
+                        BEST SCORE: <span id="drama-best">0</span>
+                    </p>
+                    <button
+                        class="primary-button game-launch"
+                        type="button"
+                        data-game="drama"
+                    >
+                        PLAY GAME
+                    </button>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- GAME PLAY AREA -->
+
+        <section
+            class="panel arcade-console"
+            id="arcade-console"
+            aria-labelledby="active-game-title"
+        >
+            <p class="eyebrow">ACTIVE GAME TERMINAL</p>
+
+            <h2 id="active-game-title">Awaiting Agent Selection</h2>
+
+            <p id="arcade-instructions" aria-live="polite">
+                Select a game above to initialize the arcade terminal.
+            </p>
+
+            <div class="arcade-stats">
+                <div class="stat-box">
+                    <span class="stat-label">CURRENT SCORE</span>
+                    <strong id="arcade-score">0</strong>
+                </div>
+
+                <div class="stat-box">
+                    <span class="stat-label">TIME LEFT</span>
+                    <strong id="arcade-timer">--</strong>
+                </div>
+
+                <div class="stat-box">
+                    <span class="stat-label">GAME STATUS</span>
+                    <strong id="arcade-status">STANDBY</strong>
+                </div>
+            </div>
+
+            <!-- Catch the Ramen play area -->
+            <div class="game-board" id="ramen-board" hidden>
+                <p class="board-hint">Catch the ramen. Avoid the trouble.</p>
+                <div class="game-playfield" id="ramen-playfield">
+                    <button
+                        class="game-start-overlay"
+                        id="ramen-start"
+                        type="button"
+                    >
+                        START RAMEN MISSION
+                    </button>
+                </div>
+                <p class="game-controls">
+                    Controls: use the left and right arrow keys or
+                    tap the on-screen controls.
+                </p>
+                <div class="touch-controls">
+                    <button type="button" data-control="left" aria-label="Move left">◀</button>
+                    <button type="button" data-control="right" aria-label="Move right">▶</button>
+                </div>
+            </div>
+
+            <!-- Dodge the Homework play area -->
+            <div class="game-board" id="homework-board" hidden>
+                <p class="board-hint">Keep moving. The assignments are coming.</p>
+                <div class="game-playfield" id="homework-playfield">
+                    <button
+                        class="game-start-overlay"
+                        id="homework-start"
+                        type="button"
+                    >
+                        START DODGE MISSION
+                    </button>
+                </div>
+                <p class="game-controls">
+                    Controls: use the arrow keys or the on-screen controls.
+                </p>
+                <div class="touch-controls">
+                    <button type="button" data-control="left" aria-label="Move left">◀</button>
+                    <button type="button" data-control="right" aria-label="Move right">▶</button>
+                </div>
+            </div>
+
+            <!-- Tap the Bias play area -->
+            <div class="game-board" id="bias-board" hidden>
+                <p class="board-hint">Tap the target whenever it appears.</p>
+                <div class="game-playfield target-playfield" id="bias-playfield">
+                    <button
+                        class="game-start-overlay"
+                        id="bias-start"
+                        type="button"
+                    >
+                        START REFLEX TEST
+                    </button>
+                </div>
+                <p class="game-controls">
+                    Every successful tap earns points. Stay alert, Agent.
+                </p>
+            </div>
+
+            <!-- Guess the K-Drama Trope play area -->
+            <div class="game-board" id="drama-board" hidden>
+                <p class="board-hint">Choose the trope that best fits the scene.</p>
+
+                <div class="drama-question-card">
+                    <p class="eyebrow" id="drama-question-number">CASE 01</p>
+                    <p id="drama-question">
+                        A mysterious stranger keeps appearing at exactly
+                        the right moment. What trope could this be?
+                    </p>
+
+                    <div
+                        class="drama-options"
+                        id="drama-options"
+                        role="group"
+                        aria-label="Choose the K-drama trope"
+                    ></div>
+
+                    <p id="drama-feedback" aria-live="polite"></p>
+                </div>
+
+                <button
+                    class="secondary-button"
+                    id="drama-start"
+                    type="button"
+                >
+                    START TROPE TEST
+                </button>
+            </div>
+
+            <div class="arcade-actions">
+                <button
+                    class="secondary-button"
+                    id="arcade-restart"
+                    type="button"
+                >
+                    RESTART GAME
+                </button>
+
+                <button
+                    class="secondary-button"
+                    id="arcade-stop"
+                    type="button"
+                >
+                    STOP GAME
+                </button>
+            </div>
+
+            <p id="arcade-message" class="access-note" aria-live="polite">
+                The arcade is waiting for you.
+            </p>
+        </section>
+
+        <!-- AWARDS -->
+
+        <section class="panel arcade-awards">
+            <p class="eyebrow">AGENT ACHIEVEMENTS</p>
+            <h2>Hall of Chaos</h2>
+
+            <div class="achievement-list">
+                <div class="achievement-item">
+                    <span aria-hidden="true">🍜</span>
+                    <div>
+                        <h3>Ramen Guardian</h3>
+                        <p>Earn points in Catch the Ramen.</p>
+                    </div>
+                    <span class="achievement-status" id="ramen-award">LOCKED</span>
+                </div>
+
+                <div class="achievement-item">
+                    <span aria-hidden="true">📚</span>
+                    <div>
+                        <h3>Assignment Escape Artist</h3>
+                        <p>Survive the homework storm.</p>
+                    </div>
+                    <span class="achievement-status" id="homework-award">LOCKED</span>
+                </div>
+
+                <div class="achievement-item">
+                    <span aria-hidden="true">💎</span>
+                    <div>
+                        <h3>Bias Detection Expert</h3>
+                        <p>Complete the reflex challenge.</p>
+                    </div>
+                    <span class="achievement-status" id="bias-award">LOCKED</span>
+                </div>
+
+                <div class="achievement-item">
+                    <span aria-hidden="true">🎬</span>
+                    <div>
+                        <h3>Trope Investigator</h3>
+                        <p>Complete the K-drama trope test.</p>
+                    </div>
+                    <span class="achievement-status" id="drama-award">LOCKED</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- NAVIGATION -->
+
+        <nav class="mission-navigation" aria-label="Mission navigation">
+            <a class="secondary-button" href="quiz.html">
+                ← PREVIOUS MISSION
+            </a>
+
+            <button
+                class="primary-button"
+                id="continue-arcade"
+                type="button"
+            >
+                CLAIM MISSION CLEARANCE →
+            </button>
+        </nav>
+
+        <p class="access-note" id="arcade-clearance">
+            Complete the arcade mission to request clearance for the next file.
+        </p>
+
+    </main>
+
+    <footer class="agency-footer">
+        <span>SANDYVERSE // CHAOS ARCADE</span>
+        <span>MISSION 07 / 12</span>
+        <span>NO AUDIO. ALL CHAOS.</span>
+    </footer>
+
+</body>
+</html>

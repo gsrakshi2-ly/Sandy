@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080D18">
+
+  <title>Bias Courtroom | SANDYVERSE</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="missions.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body class="courtroom-page">
+
+  <main class="page-container">
+
+    <header class="agency-header">
+      <a class="agency-brand" href="index.html">
+        <span class="agency-symbol" aria-hidden="true">☾ ✦</span>
+        <span>SANDYVERSE</span>
+      </a>
+
+      <span class="classified-label">MISSION 05</span>
+    </header>
+
+    <section class="page-hero">
+      <p class="eyebrow">SANDYVERSE SUPREME COURT</p>
+
+      <h1>
+        ALL RISE FOR<br>
+        <span>THE BIAS COURT.</span>
+      </h1>
+
+      <p class="page-description">
+        The accusations are ridiculous. The defence is dramatic.
+        The judge may or may not have a bias.
+      </p>
+    </section>
+
+    <section class="courtroom panel">
+
+      <div class="court-status">
+        <span class="file-tag">COURT FILE 005</span>
+        <span class="status-indicator">
+          <span class="status-dot"></span>
+          COURT IN SESSION
+        </span>
+      </div>
+
+      <div class="court-banner">
+        <span class="court-symbol" aria-hidden="true">⚖</span>
+        <p>THE PEOPLE VS. ICONIC PEOPLE</p>
+        <h2>CASE NO. 005-B</h2>
+      </div>
+
+      <div class="court-step" id="court-step"
+           aria-live="polite">
+
+        <p class="eyebrow">THE ACCUSATION</p>
+
+        <h2 id="court-question">
+          WHO IS STANDING TRIAL TODAY?
+        </h2>
+
+        <p id="court-description">
+          Choose a case to begin the most chaotic hearing
+          in entertainment history.
+        </p>
+
+      </div>
+
+      <div class="court-choices" id="court-choices">
+
+        <button class="court-choice" type="button"
+                data-case="blackpink">
+          <span class="choice-number">CASE 01</span>
+          <span class="choice-title">BLACKPINK</span>
+          <span class="choice-description">
+            Accused of making every comeback an emergency.
+          </span>
+        </button>
+
+        <button class="court-choice" type="button"
+                data-case="stray-kids">
+          <span class="choice-number">CASE 02</span>
+          <span class="choice-title">STRAY KIDS</span>
+          <span class="choice-description">
+            Accused of causing uncontrollable concert energy.
+          </span>
+        </button>
+
+        <button class="court-choice" type="button"
+                data-case="babymonster">
+          <span class="choice-number">CASE 03</span>
+          <span class="choice-title">BABYMONSTER</span>
+          <span class="choice-description">
+            Accused of excessive monster-level charisma.
+          </span>
+        </button>
+
+        <button class="court-choice" type="button"
+                data-case="kdrama">
+          <span class="choice-number">CASE 04</span>
+          <span class="choice-title">K-DRAMA ACTORS</span>
+          <span class="choice-description">
+            Accused of making cliffhangers a public hazard.
+          </span>
+        </button>
+
+      </div>
+
+      <section class="defence-panel" id="defence-panel"
+               hidden aria-live="polite">
+
+        <span class="file-tag">DEFENCE ATTORNEY: AGENT SANDY</span>
+
+        <h2 id="defence-question">YOUR HONOUR...</h2>
+
+        <p id="defence-description">
+          The defence is ready to present its argument.
+        </p>
+
+        <div class="defence-choices" id="defence-choices">
+
+          <button class="secondary-button defence-option"
+                  type="button" data-defence="iconic">
+            TOO ICONIC TO JUDGE.
+          </button>
+
+          <button class="secondary-button defence-option"
+                  type="button" data-defence="innocent">
+            COMPLETELY INNOCENT.
+          </button>
+
+          <button class="secondary-button defence-option"
+                  type="button" data-defence="chaos">
+            YOUR HONOUR, I AM ALSO CONFUSED.
+          </button>
+
+        </div>
+
+      </section>
+
+      <section class="verdict-panel" id="verdict-panel"
+               hidden aria-live="polite">
+
+        <div class="verdict-seal" aria-hidden="true">⚖</div>
+
+        <p class="eyebrow">OFFICIAL COURT RULING</p>
+
+        <h2 id="verdict-title">VERDICT PENDING</h2>
+
+        <p id="verdict-description"></p>
+
+        <div class="certificate" id="bias-certificate">
+          <p class="certificate-kicker">
+            SANDYVERSE SUPREME COURT
+          </p>
+
+          <h3>BIAS DEFENDER</h3>
+
+          <p>This certifies that</p>
+          <p class="certificate-name">AGENT SANDY</p>
+
+          <p id="certificate-description">
+            Has successfully survived one extremely chaotic
+            entertainment trial.
+          </p>
+
+          <span class="certificate-seal">OFFICIALLY ICONIC</span>
+        </div>
+
+        <button class="secondary-button" id="restart-court"
+                type="button">
+          TRY ANOTHER CASE
+        </button>
+
+        <button class="primary-button" id="continue-court"
+                type="button">
+          ACCEPT VERDICT & CONTINUE →
+        </button>
+
+      </section>
+
+      <p class="access-note" id="court-status"
+         aria-live="polite">
+        Agent Sandy, select a case to begin.
+      </p>
+
+    </section>
+
+    <nav class="mission-navigation" aria-label="Mission navigation">
+      <a class="text-link" href="investigation.html">
+        ← PREVIOUS MISSION
+      </a>
+
+      <a class="text-link" href="index.html">
+        RETURN TO HQ
+      </a>
+    </nav>
+
+    <footer class="agency-footer">
+      <span>JUSTICE IS TEMPORARILY QUESTIONABLE</span>
+      <span>MISSION 05 / 12</span>
+    </footer>
+
+  </main>
+
+</body>
+</html>

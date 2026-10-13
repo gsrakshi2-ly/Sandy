@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#070b18">
+
+    <title>Classified Roast Files | SANDYVERSE</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="missions.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body class="roasts-page">
+
+    <div class="star-field" aria-hidden="true"></div>
+
+    <header class="agency-header">
+        <a class="agency-brand" href="index.html">
+            <span class="agency-symbol" aria-hidden="true">☾ ✦</span>
+            <span>SANDYVERSE</span>
+        </a>
+
+        <span class="classified-label">ROAST DIVISION // 10</span>
+    </header>
+
+    <main class="page-container">
+
+        <!-- HERO -->
+
+        <section class="hero-section">
+            <p class="eyebrow">WARNING: EXTREMELY QUESTIONABLE EVIDENCE</p>
+
+            <h1>THE ROAST <span class="accent-text">FILES</span></h1>
+
+            <p class="hero-description">
+                Agent Sandy, your classified records have been reviewed.
+                The evidence is dramatic, the allegations are ridiculous,
+                and the agency's patience is officially unavailable.
+            </p>
+
+            <div class="status-strip">
+                <span>SUBJECT: SANDY</span>
+                <span>FILES: 11</span>
+                <span>SEVERITY: COMEDIC</span>
+            </div>
+        </section>
+
+        <!-- CLASSIFICATION NOTICE -->
+
+        <section class="panel roast-warning">
+            <span class="warning-symbol" aria-hidden="true">⚠</span>
+
+            <div>
+                <p class="eyebrow">AGENCY DISCLAIMER</p>
+                <h2>All Allegations Are For Comedy</h2>
+                <p>
+                    These fictional roast files are friendly birthday
+                    jokes. No actual agency investigation has taken place.
+                    Proceed only if you are ready for unnecessary drama.
+                </p>
+            </div>
+        </section>
+
+        <!-- CATEGORY FILTERS -->
+
+        <section class="panel roast-control-panel">
+            <p class="eyebrow">FILE SELECTION TERMINAL</p>
+            <h2>Choose Your Roast Category</h2>
+
+            <div
+                class="roast-category-list"
+                id="roast-category-list"
+                role="group"
+                aria-label="Choose a roast category"
+            >
+                <button
+                    class="secondary-button roast-category active"
+                    type="button"
+                    data-roast-category="kpop"
+                    aria-pressed="true"
+                >
+                    K-POP CRIMES
+                </button>
+
+                <button
+                    class="secondary-button roast-category"
+                    type="button"
+                    data-roast-category="kdrama"
+                    aria-pressed="false"
+                >
+                    K-DRAMA DELUSIONS
+                </button>
+
+                <button
+                    class="secondary-button roast-category"
+                    type="button"
+                    data-roast-category="ramen"
+                    aria-pressed="false"
+                >
+                    RAMEN CRIMES
+                </button>
+
+                <button
+                    class="secondary-button roast-category"
+                    type="button"
+                    data-roast-category="ultimate"
+                    aria-pressed="false"
+                >
+                    ULTIMATE ROAST
+                </button>
+
+                <button
+                    class="secondary-button roast-category"
+                    type="button"
+                    data-roast-category="mixed"
+                    aria-pressed="false"
+                >
+                    SURPRISE MIXED MODE
+                </button>
+            </div>
+
+            <p class="access-note" id="roast-category-status" aria-live="polite">
+                K-pop case files selected.
+            </p>
+        </section>
+
+        <!-- CLASSIFIED ROAST DOSSIER -->
+
+        <section class="panel roast-dossier-section">
+
+            <div class="dossier-topline">
+                <span>DOCUMENT: SV-ROAST-001</span>
+                <span class="dossier-confidential">CONFIDENTIAL</span>
+            </div>
+
+            <div class="redacted-divider" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="roast-file-content" id="roast-file-content">
+
+                <p class="eyebrow" id="roast-file-category">
+                    K-POP CRIMES
+                </p>
+
+                <div class="roast-file-number" id="roast-file-number">
+                    FILE 01
+                </div>
+
+                <div class="roast-stamp" aria-hidden="true">
+                    CLASSIFIED
+                </div>
+
+                <h2 id="roast-file-title">
+                    THE GOD'S MENU INCIDENT
+                </h2>
+
+                <p class="roast-text" id="roast-text" aria-live="polite">
+                    You listen to God's Menu because even your brain can't
+                    cook up a sensible thought.
+                </p>
+
+                <div class="roast-evidence">
+                    <span class="evidence-label">EVIDENCE STATUS</span>
+                    <span id="roast-evidence-status">
+                        EXTREMELY QUESTIONABLE
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="roast-file-footer">
+                <span>SUBJECT: AGENT SANDY</span>
+                <span>CLASSIFICATION: COMEDIC</span>
+            </div>
+
+        </section>
+
+        <!-- ACTIONS -->
+
+        <section class="panel roast-actions-panel">
+
+            <p class="eyebrow">AUTHORISATION REQUIRED</p>
+            <h2>How Much Chaos Can You Handle?</h2>
+
+            <div class="roast-actions">
+
+                <button
+                    class="primary-button"
+                    id="roast-me"
+                    type="button"
+                >
+                    🔥 ROAST ME
+                </button>
+
+                <button
+                    class="secondary-button"
+                    id="next-victim"
+                    type="button"
+                >
+                    NEXT VICTIM
+                </button>
+
+                <button
+                    class="secondary-button"
+                    id="maximum-chaos"
+                    type="button"
+                >
+                    MAXIMUM CHAOS
+                </button>
+
+                <button
+                    class="secondary-button"
+                    id="copy-roast"
+                    type="button"
+                >
+                    COPY ROAST
+                </button>
+
+                <button
+                    class="secondary-button"
+                    id="agency-reaction"
+                    type="button"
+                >
+                    AGENCY REACTION
+                </button>
+
+            </div>
+
+            <div class="roast-reaction-panel" id="roast-reaction-panel">
+                <p class="eyebrow">HEADQUARTERS REACTION</p>
+
+                <p id="roast-reaction" aria-live="polite">
+                    Headquarters is reviewing the evidence.
+                    Legal has requested a very long break.
+                </p>
+            </div>
+
+            <div class="roast-counter">
+                <span>FILES OPENED</span>
+                <strong id="roast-counter">0</strong>
+            </div>
+
+            <p class="access-note" id="roast-status" aria-live="polite">
+                Select a category and open your first roast file.
+            </p>
+
+        </section>
+
+        <!-- CASE SUMMARY -->
+
+        <section class="panel roast-summary">
+            <p class="eyebrow">PRELIMINARY INVESTIGATION REPORT</p>
+            <h2>Charges Currently Under Review</h2>
+
+            <ul class="roast-charge-list">
+                <li>
+                    <span class="charge-number">01</span>
+                    <span>Excessive K-pop enthusiasm</span>
+                    <span class="charge-status">CONFIRMED FOR COMEDY</span>
+                </li>
+
+                <li>
+                    <span class="charge-number">02</span>
+                    <span>Unreasonable K-drama expectations</span>
+                    <span class="charge-status">UNDER REVIEW</span>
+                </li>
+
+                <li>
+                    <span class="charge-number">03</span>
+                    <span>Suspicious ramen loyalty</span>
+                    <span class="charge-status">HIGHLY LIKELY</span>
+                </li>
+
+                <li>
+                    <span class="charge-number">04</span>
+                    <span>Unlicensed levels of chaos</span>
+                    <span class="charge-status">BEYOND MEASUREMENT</span>
+                </li>
+            </ul>
+
+            <p class="access-note">
+                Final report: the subject remains iconic and cannot
+                be contained by ordinary paperwork.
+            </p>
+        </section>
+
+        <!-- NAVIGATION -->
+
+        <nav class="mission-navigation" aria-label="Mission navigation">
+
+            <a class="secondary-button" href="vip.html">
+                ← PREVIOUS MISSION
+            </a>
+
+            <button
+                class="primary-button"
+                id="continue-roasts"
+                type="button"
+            >
+                ACCESS THE 11:11 FILE →
+            </button>
+
+        </nav>
+
+        <p class="access-note" id="roast-clearance" aria-live="polite">
+            Open the roast files to prepare for the next classified mission.
+        </p>
+
+    </main>
+
+    <footer class="agency-footer">
+        <span>SANDYVERSE // ROAST DIVISION</span>
+        <span>MISSION 10 / 12</span>
+        <span>HANDLE WITH HUMOUR</span>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#070b18">
+
+    <title>VIP Birthday Pass | SANDYVERSE</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="missions.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body class="vip-page">
+
+    <div class="star-field" aria-hidden="true"></div>
+
+    <header class="agency-header">
+        <a class="agency-brand" href="index.html">
+            <span class="agency-symbol" aria-hidden="true">☾ ✦</span>
+            <span>SANDYVERSE</span>
+        </a>
+
+        <span class="classified-label">VIP DIVISION // 09</span>
+    </header>
+
+    <main class="page-container">
+
+        <!-- HERO -->
+
+        <section class="hero-section">
+            <p class="eyebrow">SPECIAL AUTHORISATION GRANTED</p>
+
+            <h1>VIP <span class="accent-text">CLEARANCE</span></h1>
+
+            <p class="hero-description">
+                Agent Sandy, your record has been reviewed.
+                Your clearance level has exceeded every known
+                agency classification.
+            </p>
+
+            <div class="status-strip">
+                <span>ACCESS: VIP</span>
+                <span>LEVEL: ∞</span>
+                <span>STATUS: ICONIC</span>
+            </div>
+        </section>
+
+        <!-- EDITABLE AGENT DETAILS -->
+
+        <section class="panel vip-details-panel">
+            <p class="eyebrow">IDENTITY CONFIGURATION</p>
+            <h2>Confirm Your Agent Details</h2>
+
+            <p class="section-description">
+                Your pass is pre-filled. You can change the displayed
+                name or codename before generating the card.
+            </p>
+
+            <form id="vip-details-form" class="vip-details-form">
+
+                <label for="vip-agent-name">Agent name</label>
+                <input
+                    type="text"
+                    id="vip-agent-name"
+                    name="agentName"
+                    value="Sandra Mattew"
+                    maxlength="40"
+                    required
+                    autocomplete="off"
+                >
+
+                <label for="vip-codename">Codename</label>
+                <input
+                    type="text"
+                    id="vip-codename"
+                    name="codename"
+                    value="Sandy"
+                    maxlength="24"
+                    required
+                    autocomplete="off"
+                >
+
+                <button class="primary-button" type="submit">
+                    GENERATE VIP PASS
+                </button>
+
+            </form>
+
+            <p id="vip-form-status" class="access-note" aria-live="polite">
+                Details ready for pass generation.
+            </p>
+        </section>
+
+        <!-- VIP PASS -->
+
+        <section class="panel vip-pass-section">
+
+            <p class="eyebrow">DIGITAL COLLECTIBLE // 001</p>
+            <h2>Your Classified Pass</h2>
+
+            <div class="vip-pass" id="vip-pass">
+
+                <div class="vip-pass-top">
+                    <div class="vip-pass-brand">
+                        <span class="vip-pass-logo" aria-hidden="true">☾ ✦</span>
+                        <div>
+                            <strong>SANDYVERSE</strong>
+                            <span>SECRET AGENCY</span>
+                        </div>
+                    </div>
+
+                    <span class="vip-pass-type">VIP</span>
+                </div>
+
+                <div class="vip-pass-divider"></div>
+
+                <div class="vip-pass-content">
+
+                    <div class="vip-pass-emblem" aria-hidden="true">
+                        <span class="emblem-moon">☾</span>
+                        <span class="emblem-star">✦</span>
+                        <span class="emblem-key">⚿</span>
+                    </div>
+
+                    <div class="vip-pass-identity">
+                        <p class="vip-pass-label">AUTHORISED AGENT</p>
+                        <h3 id="vip-display-name">SANDRA MATTEW</h3>
+
+                        <p class="vip-pass-label">CODENAME</p>
+                        <p class="vip-pass-codename" id="vip-display-codename">
+                            SANDY
+                        </p>
+
+                        <div class="vip-pass-clearance">
+                            <span>CLEARANCE LEVEL</span>
+                            <strong>∞</strong>
+                            <span>BEYOND SECURITY LIMITS</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="vip-pass-redactions" aria-label="Decorative redacted details">
+                    <span class="redacted-bar"></span>
+                    <span class="redacted-bar short"></span>
+                    <span class="redacted-bar medium"></span>
+                </div>
+
+                <div class="vip-pass-bottom">
+                    <span>ACCESS: UNLIMITED CHAOS</span>
+                    <span>STATUS: PERMANENT VIP</span>
+                </div>
+
+                <div class="vip-pass-stamp" aria-hidden="true">
+                    CLASSIFIED
+                </div>
+
+            </div>
+
+            <div class="vip-pass-actions">
+                <button
+                    class="secondary-button"
+                    id="copy-vip-details"
+                    type="button"
+                >
+                    COPY PASS DETAILS
+                </button>
+
+                <button
+                    class="secondary-button"
+                    id="vip-screenshot-tip"
+                    type="button"
+                >
+                    HOW TO SAVE A SCREENSHOT
+                </button>
+            </div>
+
+            <p id="vip-pass-status" class="access-note" aria-live="polite"></p>
+
+            <div class="screenshot-instructions" id="screenshot-instructions" hidden>
+                <h3>Save Your VIP Pass</h3>
+                <p>
+                    On a computer, use your system's screenshot shortcut
+                    to capture the pass. On a phone or tablet, use the
+                    device's screenshot controls.
+                </p>
+                <p>
+                    For the cleanest result, keep the pass visible and
+                    capture the card area rather than the entire page.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- CLEARANCE MESSAGE -->
+
+        <section class="panel vip-clearance-panel">
+
+            <div class="vip-clearance-symbol" aria-hidden="true">✦</div>
+
+            <p class="eyebrow">HEADQUARTERS DECISION</p>
+
+            <h2>Clearance Level: Infinity</h2>
+
+            <p>
+                Your VIP status is officially recognised within the
+                fictional SANDYVERSE universe. No mission is too chaotic,
+                no plot twist is too dramatic, and no birthday deserves
+                anything less than legendary treatment.
+            </p>
+
+            <p class="vip-clearance-quote">
+                “Some agents follow the rules. Some agents become the reason
+                the agency needs new rules.”
+            </p>
+
+            <span class="vip-approval-stamp">APPROVED BY HQ</span>
+
+        </section>
+
+        <!-- NAVIGATION -->
+
+        <nav class="mission-navigation" aria-label="Mission navigation">
+
+            <a class="secondary-button" href="gift.html">
+                ← PREVIOUS MISSION
+            </a>
+
+            <button
+                class="primary-button"
+                id="continue-vip"
+                type="button"
+            >
+                OPEN THE ROAST FILES →
+            </button>
+
+        </nav>
+
+        <p class="access-note" id="vip-clearance-status" aria-live="polite">
+            Generate your pass to prepare for the next classified file.
+        </p>
+
+    </main>
+
+    <footer class="agency-footer">
+        <span>SANDYVERSE // VIP DIVISION</span>
+        <span>MISSION 09 / 12</span>
+        <span>FICTIONAL DIGITAL COLLECTIBLE</span>
+    </footer>
+
+</body>
+</html>
