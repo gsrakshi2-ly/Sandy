@@ -6,33 +6,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="theme-color" content="#080D18">
-  <meta name="description" content="A classified birthday mission awaits Agent Sandy.">
+  <meta
+    name="description"
+    content="A classified birthday mission awaits Agent Sandy."
+  >
 
   <title>SANDYVERSE | Secret Agency</title>
 
- <link rel="stylesheet" href="./style.css?v=2">
+  <!-- Elegant display font + clean modern font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
-  <script src="missions.js" defer></script>
-  <script src="script.js" defer></script>
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="./style.css?v=3">
+
+  <!-- Existing JavaScript files -->
+  <script src="./missions.js" defer></script>
+  <script src="./script.js" defer></script>
 </head>
 
 <body class="agency-page">
 
   <main class="agency-container">
 
+    <!-- Header -->
     <header class="agency-header">
-      <a class="agency-brand" href="index.html"
-         aria-label="Sandyverse home">
+      <a
+        class="agency-brand"
+        href="./index.html"
+        aria-label="Sandyverse home"
+      >
         <span class="agency-symbol" aria-hidden="true">☾ ✦</span>
-        <span>SANDYVERSE</span>
+        <span class="agency-brand-name">SANDYVERSE</span>
       </a>
 
       <span class="classified-label">
+        <span class="status-dot" aria-hidden="true"></span>
         CLASSIFIED PROJECT
       </span>
     </header>
 
-    <section class="agency-hero" aria-labelledby="main-title">
+    <!-- Main mission introduction -->
+    <section
+      class="agency-hero"
+      aria-labelledby="main-title"
+    >
 
       <div class="agency-emblem" aria-hidden="true">
         <span class="emblem-moon">☾</span>
@@ -51,7 +73,9 @@
       </h1>
 
       <div class="classified-stamp">
+        <span aria-hidden="true">✦</span>
         TOP SECRET · AUTHORIZED ACCESS ONLY
+        <span aria-hidden="true">✦</span>
       </div>
 
       <p class="agency-briefing">
@@ -59,37 +83,47 @@
         Agent Sandy, report immediately.
       </p>
 
+      <!-- Agent information -->
       <div class="agent-details">
-        <div>
+
+        <div class="agent-detail">
           <span class="detail-label">SUBJECT</span>
           <span class="detail-value">SANDRA MATTEW</span>
         </div>
 
-        <div>
+        <div class="agent-detail">
           <span class="detail-label">CODENAME</span>
           <span class="detail-value">SANDY</span>
         </div>
 
-        <div>
+        <div class="agent-detail">
           <span class="detail-label">THREAT LEVEL</span>
           <span class="detail-value electric-text">CHAOTIC</span>
         </div>
+
       </div>
 
+      <!-- Keep this ID: existing JavaScript may depend on it -->
       <button
         class="primary-button"
         id="begin-mission"
-        type="button">
-        BEGIN MISSION
-        <span aria-hidden="true"> →</span>
+        type="button"
+      >
+        <span>BEGIN MISSION</span>
+        <span class="button-arrow" aria-hidden="true">↗</span>
       </button>
 
-      <p class="access-note" id="access-message" aria-live="polite">
+      <p
+        class="access-note"
+        id="access-message"
+        aria-live="polite"
+      >
         Awaiting agent authorization...
       </p>
 
     </section>
 
+    <!-- Footer -->
     <footer class="agency-footer">
       <span>EST. UNDER CLASSIFIED CONDITIONS</span>
       <span>MISSION 01 / 12</span>
@@ -97,6 +131,7 @@
 
   </main>
 
+  <!-- Decorative background stars -->
   <div class="star-field" aria-hidden="true">
     <span>✦</span>
     <span>·</span>
